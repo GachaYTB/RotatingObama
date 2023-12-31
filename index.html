@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Obama</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap');
+        body {
+            background-color: rgb(50, 50, 50);
+        }
+        h1 {
+            color: rgb(255, 255, 255);
+            margin-left: 625px;
+            font-family: "Source Sans 3", sans-serif;
+        }
+        @keyframes rotateY {
+            0% {
+                transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+            }
+            100% {
+                transform: rotateY(360deg) rotateX(360deg) rotateZ(720deg);
+            }
+        }
+        img {
+            animation: rotateY 5s infinite linear;
+            width: 480px;
+            height: 270px;
+            margin-top: 175px;
+            margin-left: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Rotating Obama</h1>
+    <img src="obama.jfif">
+</body>
+</html>
